@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from './Project'
-import grannyCrush from '../images/granny-crush.png'
-import covidStats from '../images/covid-tracker.png'
+import grannyCrush from '../../images/granny-crush.png'
+import covidStats from '../../images/covid-tracker.png'
 
 const projects = [
   {

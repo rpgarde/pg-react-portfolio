@@ -1,7 +1,7 @@
 import React from 'react';
-import github from './images/github-icon.png'
-import linkedin from './images/linkedin-icon.png'
-import youtube from './images/youtube-icon.png'
+import github from '../images/github-icon.png'
+import linkedin from '../images/linkedin-icon.png'
+import youtube from '../images/youtube-icon.png'
 
 const style = {
     maxWidth: '50px'
