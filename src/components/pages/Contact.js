@@ -57,7 +57,7 @@ function Contact() {
 
   return (
     <div className="row">
-      <h1 className="text-center">Get in touch</h1>
+      <h1 className="text-center fw-bold">Get in touch</h1>
       <div className = "col-6 offset-3">
       <form className="form">
         <div class="mb-3">

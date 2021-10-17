@@ -12,7 +12,7 @@ export default function About() {
             <div className="card-body col-md-6 col-lg-7">
               <div>
                 <h3>Hello World 👋</h3>
-                <h1>I'm Paolo Garde.</h1>
+                <h1 className = "fw-bold">I'm Paolo Garde.</h1>
                 <h3>Web Developer</h3>
                 <p className = "mt-4">I have over 8 years of Ops leadership experience in
                   startups like Uber, FoodByUs, and :Different. I've always been interested in the tech side and I've recently decided to get into the world of web development.</p>

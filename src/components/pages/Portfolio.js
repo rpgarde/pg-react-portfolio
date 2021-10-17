@@ -62,7 +62,7 @@ const projects = [
 export default function Portfolio() {
   return (
     <div>
-      <h1 className = "text-center mb-3">Here's what I've been working on</h1>
+      <h1 className = "text-center mb-3 fw-bold">Here's what I've been working on over the past 6 months.</h1>
       <div className = "d-flex flex-wrap justify-content-evenly">
       {projects.map((project)=>(
       <Project 
