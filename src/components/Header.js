@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header({ currentPage, handlePageChange }) {
   return (
-    <nav className="navbar navbar-expand-md bg-dark navbar-dark">
+    <nav className="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
       <div className="container-fluid">
         <a className="navbar-brand fw-bold" href="#about">paolo garde.</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

@@ -26,11 +26,11 @@ function Contact() {
   };
 
   const handleFormBlur = (e) => {
-    if (!validateEmail(email)) {
-      setErrorMessage('Email is invalid');
-    }
-    else if (!validateField(name) || !validateField(email) || !validateField(message)) {
+    if (!validateField(name) || !validateField(email) || !validateField(message)) {
       setErrorMessage('Please fill up all the fields');
+    }
+    else if (!validateEmail(email)) {
+      setErrorMessage('Email is invalid');
     }
     else {
       setErrorMessage('')
@@ -39,12 +39,13 @@ function Contact() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    if (!validateEmail(email)) {
-      setErrorMessage('Email is invalid');
-      return;
-    }
     if (!validateField(name) || !validateField(email) || !validateField(message)) {
       setErrorMessage('Please fill up all the fields');
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      setErrorMessage('Email is invalid');
       return;
     }
 
@@ -106,7 +107,9 @@ function Contact() {
             (<p></p>)
           }
       </div>
-        <button type="button" className="btn btn-secondary" onClick={handleFormSubmit}>Submit</button>
+      <div  className = "text-center">
+        <button type="button" className="btn btn-dark" onClick={handleFormSubmit}>Submit</button>
+      </div>
       </form>
       </div>
     </div>
