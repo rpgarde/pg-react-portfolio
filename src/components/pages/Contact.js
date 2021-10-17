@@ -49,7 +49,7 @@ function Contact() {
       return;
     }
 
-    alert(`Thank you for your message, ${name}`);
+    setErrorMessage('Hi, this form does not work yet. In the meantime, contact me through +61412957544 or rpgarde@gmail.com')
 
     setName('');
     setMessage('');

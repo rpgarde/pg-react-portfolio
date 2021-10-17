@@ -1,53 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Navigation from './Navigation';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+import Resume from './pages/Resume'
+import Footer from './Footer';
 
-function Header({ currentPage, handlePageChange }) {
+export default function PortfolioContainer() {
+  const [currentPage, setCurrentPage] = useState('About');
+
+  // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
+  const renderPage = () => {
+    if (currentPage === 'About') {
+      return <About />;
+    }
+    if (currentPage === 'Contact') {
+      return <Contact />;
+    }
+    if (currentPage === 'Resume'){
+      return <Resume />;
+    }
+    return <Portfolio />;
+  };
+
+  const handlePageChange = (page) => setCurrentPage(page);
+
   return (
-    <nav className="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
-      <div className="container-fluid">
-        <a className="navbar-brand fw-bold" href="#about">paolo garde.</a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a aria-current="page" href="#about"
-                className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-                onClick={() => handlePageChange('About')}
-              >
-                about me
-              </a>
-            </li>
-            <li className="nav-item">
-              <a aria-current="page" href="#portfolio"
-                className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
-                onClick={() => handlePageChange('Portfolio')}
-              >
-                my portfolio
-              </a>
-            </li>          
-            <li className="nav-item">
-              <a aria-current="page" href="#resume"
-                className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-                onClick={() => handlePageChange('Resume')}
-              >
-                my resume
-              </a>
-            </li>
-            <li className="nav-item">
-              <a aria-current="page" href="#contact"
-                className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-                onClick={() => handlePageChange('Contact')}
-              >
-                contact me
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  )
+    <div className = "d-flex flex-column vh-100">
+      {/* We are passing the currentPage from state and the function to update it */}
+      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+      {/* Here we are calling the renderPage method which will return a component  */}
+      <main className="container mt-5">
+        {renderPage()}
+      </main>
+      <Footer/>
+    </div>
+  );
 }
-
-export default Header;
