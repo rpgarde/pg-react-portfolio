@@ -1,9 +1,5 @@
 import React from 'react';
 
-// Here we are using object destructuring assignment to pluck off our variables from the props object
-// We assign them to their own variable names
-
-
 function Header({ currentPage, handlePageChange }) {
   return (
     <nav className="navbar navbar-expand-md bg-dark navbar-dark">
@@ -30,8 +26,14 @@ function Header({ currentPage, handlePageChange }) {
               >
                 my portfolio
               </a>
-            </li>          <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#resume">my resume</a>
+            </li>          
+            <li className="nav-item">
+              <a aria-current="page" href="#resume"
+                className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+                onClick={() => handlePageChange('Resume')}
+              >
+                my resume
+              </a>
             </li>
             <li className="nav-item">
               <a aria-current="page" href="#contact"
