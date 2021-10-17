@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/pg-react-portfolio/static/css/main.34d224d0.chunk.css",
+    "main.js": "/pg-react-portfolio/static/js/main.7b09c740.chunk.js",
+    "main.js.map": "/pg-react-portfolio/static/js/main.7b09c740.chunk.js.map",
+    "runtime-main.js": "/pg-react-portfolio/static/js/runtime-main.c949422b.js",
+    "runtime-main.js.map": "/pg-react-portfolio/static/js/runtime-main.c949422b.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/pg-react-portfolio/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.d4de82a2.chunk.js": "/pg-react-portfolio/static/js/2.d4de82a2.chunk.js",
+    "static/js/2.d4de82a2.chunk.js.map": "/pg-react-portfolio/static/js/2.d4de82a2.chunk.js.map",
+    "index.html": "/pg-react-portfolio/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/pg-react-portfolio/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.34d224d0.chunk.css.map": "/pg-react-portfolio/static/css/main.34d224d0.chunk.css.map",
+    "static/js/2.d4de82a2.chunk.js.LICENSE.txt": "/pg-react-portfolio/static/js/2.d4de82a2.chunk.js.LICENSE.txt",
+    "static/media/coding-quiz.4579dc6d.png": "/pg-react-portfolio/static/media/coding-quiz.4579dc6d.png",
+    "static/media/covid-tracker.4b3de04e.png": "/pg-react-portfolio/static/media/covid-tracker.4b3de04e.png",
+    "static/media/day-scheduler.2cfe115d.png": "/pg-react-portfolio/static/media/day-scheduler.2cfe115d.png",
+    "static/media/github-icon.4d74fd76.png": "/pg-react-portfolio/static/media/github-icon.4d74fd76.png",
+    "static/media/granny-crush.57a7b090.png": "/pg-react-portfolio/static/media/granny-crush.57a7b090.png",
+    "static/media/paolo-garde-cv-sep2021.8df62378.pdf": "/pg-react-portfolio/static/media/paolo-garde-cv-sep2021.8df62378.pdf",
+    "static/media/profile-pic.795c2918.png": "/pg-react-portfolio/static/media/profile-pic.795c2918.png",
+    "static/media/tech-blog.c9d5584e.png": "/pg-react-portfolio/static/media/tech-blog.c9d5584e.png",
+    "static/media/weather-dash.aa12bf7d.png": "/pg-react-portfolio/static/media/weather-dash.aa12bf7d.png",
+    "static/media/youtube-icon.e155d78d.png": "/pg-react-portfolio/static/media/youtube-icon.e155d78d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c949422b.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.d4de82a2.chunk.js",
+    "static/css/main.34d224d0.chunk.css",
+    "static/js/main.7b09c740.chunk.js"
+  ]
+}
