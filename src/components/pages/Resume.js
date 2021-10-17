@@ -2,7 +2,6 @@ import React from 'react';
 import resume from '../../images/paolo-garde-cv-sep2021.pdf'
 import { Skill } from './Skill';
 
-
 const frontEnd = [
     {
         skill: "HTML",
@@ -58,7 +57,7 @@ export default function Resume() {
             <div>
                 <h1 className="text-center my-3 fw-bold">My skills</h1>
             </div>
-            <div className="row d-flex justify-content-center">
+            <div className="row d-flex justify-content-center mb-3">
                 <div className="col-md-5 offset-1">
                     <h3 className="text-center my-2">front-end</h3>
                     <ul className="list-group list-group-flush">
