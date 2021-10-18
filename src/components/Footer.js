@@ -10,13 +10,13 @@ export default function Footer() {
     return (
         <footer className="footer bg-dark mt-auto py-4">
             <div className="d-flex justify-content-center py-2">
-                <a className = "mx-2" href="htts://www.github.com/rpgarde">
+                <a className = "mx-2" href="https://www.github.com/rpgarde">
                     <img src={github} alt="github" style={style} />
                 </a>
-                <a className = "mx-2" href="htts://www.linkedin.com/in/paologarde">
+                <a className = "mx-2" href="https://www.linkedin.com/in/paologarde">
                     <img src={linkedin} alt="linkedin" style={style} />
                 </a>
-                <a className = "mx-2" href="htts://www.youtube.com/pgblanks">
+                <a className = "mx-2" href="https://www.youtube.com/pgblanks">
                     <img src={youtube} alt="youtube" style={style} />
                 </a>
             </div>

@@ -107,7 +107,7 @@ function Contact() {
             (<p></p>)
           }
       </div>
-      <div  className = "text-center">
+      <div  className = "text-center mb-3">
         <button type="button" className="btn btn-dark" onClick={handleFormSubmit}>Submit</button>
       </div>
       </form>
