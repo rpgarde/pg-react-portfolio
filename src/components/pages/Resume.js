@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../../images/paolo-garde-cv-sep2021.pdf'
+import resume from '../../images/paolo-garde-cv-nov2021.pdf'
 import { Skill } from './Skill';
 
 const frontEnd = [

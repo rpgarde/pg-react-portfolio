@@ -7,8 +7,17 @@ import techBlog from '../../images/tech-blog.png'
 import weatherDash from '../../images/weather-dash.png'
 import dayScheduler from '../../images/day-scheduler.png'
 import codingQuiz from '../../images/coding-quiz.png'
+import roomez from '../../images/roomez.png'
 
 const projects = [
+  {
+    name:"roomEZ",
+    description:"Final project. Web app for share house dwellers to manage chores, bills, and messages",
+    tech: "React, Express, Node.js, Mongoose, MongoDB, GraphQL, Apollo, JWT, AWS S3",
+    deployed:"https://roomez.herokuapp.com/",
+    repo: "https://github.com/rpgarde/roomez",
+    image: roomez
+  },
   {
     name:"Granny Crush",
     description:"Our second group project. This is a full-stack dating site for seniors with match and chat functionality.",
@@ -40,14 +49,6 @@ const projects = [
     deployed:"https://rpgarde.github.io/weather-dashboard",
     repo: "https://www.github.com/rpgarde/weather-dashboard",
     image: weatherDash
-  },
-  {
-    name:"Day Scheduler",
-    description:"A day planner which stores entries in local storage so you can come back to it later.",
-    tech: "Bootstrap, Javascript, JQuery, Moment",
-    deployed:"https://rpgarde.github.io/day-scheduler",
-    repo: "https://www.github.com/rpgarde/day-scheduler",
-    image: dayScheduler
   },
   {
     name:"Coding Quiz",
