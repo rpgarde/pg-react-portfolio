@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.34d224d0.chunk.css",
-    "main.js": "/static/js/main.dc44ac8b.chunk.js",
-    "main.js.map": "/static/js/main.dc44ac8b.chunk.js.map",
+    "main.js": "/static/js/main.965e48c5.chunk.js",
+    "main.js.map": "/static/js/main.965e48c5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.dc33665e.js",
     "runtime-main.js.map": "/static/js/runtime-main.dc33665e.js.map",
     "static/css/2.0a9ec390.chunk.css": "/static/css/2.0a9ec390.chunk.css",
@@ -19,6 +19,7 @@
     "static/media/granny-crush.57a7b090.png": "/static/media/granny-crush.57a7b090.png",
     "static/media/paolo-garde-cv-nov2021.77930b71.pdf": "/static/media/paolo-garde-cv-nov2021.77930b71.pdf",
     "static/media/profile-pic.795c2918.png": "/static/media/profile-pic.795c2918.png",
+    "static/media/roomez.68b6b147.png": "/static/media/roomez.68b6b147.png",
     "static/media/tech-blog.c9d5584e.png": "/static/media/tech-blog.c9d5584e.png",
     "static/media/weather-dash.aa12bf7d.png": "/static/media/weather-dash.aa12bf7d.png",
     "static/media/youtube-icon.e155d78d.png": "/static/media/youtube-icon.e155d78d.png"
@@ -28,6 +29,6 @@
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.d4de82a2.chunk.js",
     "static/css/main.34d224d0.chunk.css",
-    "static/js/main.dc44ac8b.chunk.js"
+    "static/js/main.965e48c5.chunk.js"
   ]
 }
