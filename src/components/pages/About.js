@@ -16,7 +16,7 @@ export default function About() {
                 <h3>Web Developer</h3>
                 <p className = "mt-4">I have over 8 years of Ops leadership experience in
                   startups like Uber, FoodByUs, and :Different. I've always been interested in the tech side and I've recently decided to get into the world of web development.</p>
-                <p className = "mt-2"> I'm finishing up a Coding Bootcamp at The University of Sydney, graduating Nov 2021. </p>
+                <p className = "mt-2"> I recently finished up a coding bootcamp at The University of Sydney, where I graduated with an A+ average. </p>
               </div>
             </div>
           </div>
