@@ -1,48 +1,7 @@
 import React from 'react';
 import resume from '../../images/paolo-garde-cv-nov2021.pdf'
 import { Skill } from './Skill';
-
-const frontEnd = [
-    {
-        skill: "HTML",
-        rating: "A"
-    },
-    {
-        skill: "CSS",
-        rating: "B"
-    },
-    {
-        skill: "Javascript",
-        rating: "A"
-    },
-    {
-        skill: "React",
-        rating: "B"
-    },
-    {
-        skill: "Bootstrap",
-        rating: "A"
-    }
-]
-
-const backEnd = [
-    {
-        skill: "Node.js",
-        rating: "A"
-    },
-    {
-        skill: "Express",
-        rating: "A"
-    },
-    {
-        skill: "MySQL",
-        rating: "A"
-    },
-    {
-        skill: "MongoDB",
-        rating: "B"
-    }
-]
+import { frontEnd,backEnd } from '../../data/skills';
 
 export default function Resume() {
     return (
@@ -50,7 +9,7 @@ export default function Resume() {
             <div className="text-center row">
                 <h1 className="fw-bold">Download my resume</h1>
                 <div>
-                    <a href={resume} target="_blank" rel="noreferrer" className="btn btn-dark my-4">Click me</a>
+                    <a href={resume} target="_blank" rel="noreferrer" className="btn btn-dark my-4">Download</a>
                 </div>
             </div>
             <hr />

@@ -2,3 +2,13 @@
 
 *{
     font-family: 'Nanum Gothic', sans-serif;}
+
+
+.project-card{
+    width:25rem;
+}
+
+.project-card:hover{
+    transform:scale(1.01);
+    transition:0.5s;
+}

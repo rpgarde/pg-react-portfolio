@@ -5,9 +5,9 @@ export default function About() {
     <div className = "row">
       <div>
         <div className="card mb-3 border-0">
-          <div className="row g-0">
+          <div className="row g-4">
             <div className="col-md-6 col-lg-5">
-              <img src={profile} className="img-fluid rounded-start" alt="paolo garde"/>
+              <img src={profile} className="img-fluid rounded" alt="paolo garde"/>
             </div>
             <div className="card-body col-md-6 col-lg-7">
               <div>
