@@ -8,7 +8,7 @@ import roomez from '../images/roomez.png'
 const projects = [
   {
     name:"roomEZ",
-    description:"Final project. Web app for share house dwellers to manage chores, bills, and messages",
+    description:"Full-stack MERN+GraphQL website for share house dwellers to manage chores, bills, and messages",
     tech: ['React', 'Express', 'Node.js', 'Mongoose', 'MongoDB', 'GraphQL', 'Apollo', 'JWT', 'AWS S3'],
     deployed:"https://roomez.herokuapp.com/",
     repo: "https://github.com/rpgarde/roomez",
@@ -16,7 +16,7 @@ const projects = [
   },
   {
     name:"Granny Crush",
-    description:"Our second group project. This is a full-stack dating site for seniors with match and chat functionality.",
+    description:"Full-stack dating site for seniors with match and chat functionality. This was a group project and I was the lead backend developer.",
     tech: ['Javascript', 'Bulma', 'Node.js', 'Sequelize', 'Multer', 'Socket.io'],
     deployed:"https://obscure-dusk-34538.herokuapp.com/",
     repo: "https://github.com/zahramertens/granny-crush",
@@ -25,7 +25,7 @@ const projects = [
   {
     name:"COVID-19 Tracker",
     description:"Our first group project. This shows COVID stats globally and by country. I took on the role of overall project lead.",
-    tech: ['COVID-19 Stats API', 'Bulma'],
+    tech: ['COVID-19 Stats API', 'Bulma', 'Javascript'],
     deployed:"https://rpgarde.github.io/project-1-covid-stats",
     repo: "https://www.github.com/rpgarde/project-1-covid-stats",
     image: covidStats
@@ -33,7 +33,7 @@ const projects = [
   {
     name:"Tech Blog",
     description:"Full-stack tech blog with user authentication, post, and comment functionality, deployed on Heroku.",
-    tech: ['Javascript', 'Bootstrap', 'Node.js', 'Sequelize', 'Handlebars'],
+    tech: ['Javascript', 'Bootstrap', 'Node.js', 'Sequelize', 'MySQL', 'Handlebars'],
     deployed:"https://protected-tor-62513.herokuapp.com/",
     repo: "https://www.github.com/rpgarde/cms-tech-blog",
     image: techBlog

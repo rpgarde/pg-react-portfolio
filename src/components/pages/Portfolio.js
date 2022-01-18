@@ -6,16 +6,16 @@ import projects from '../../data/projects';
 export default function Portfolio() {
   return (
     <div>
-      <h1 className = "text-center mb-3 fw-bold">Here's what I've been working on over the past 6 months.</h1>
+      <h1 className = "text-center mb-3 fw-bold">Here's a few of my favourite projects.</h1>
       <div className = "d-flex flex-wrap justify-content-evenly">
       {projects.map((project)=>(
       <Project 
-      name = {project.name}
-      description = {project.description}
-      tech = {project.tech}
-      deployed = {project.deployed}
-      repo = {project.repo}
-      image = {project.image}
+        name = {project.name}
+        description = {project.description}
+        tech = {project.tech}
+        deployed = {project.deployed}
+        repo = {project.repo}
+        image = {project.image}
       />
       ))}
       </div>

@@ -6,6 +6,7 @@
 
 .project-card{
     width:25rem;
+    transition:0.5s;
 }
 
 .project-card:hover{
