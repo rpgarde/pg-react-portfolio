@@ -1,15 +1,16 @@
 import React from 'react';
-import resume from '../../images/paolo-garde-cv-nov2021.pdf'
 import { Skill } from './Skill';
 import { frontEnd,backEnd } from '../../data/skills';
+
+const resume = 'https://docs.google.com/document/d/1kmN3iH0xwdpJ9WyoGLqLgsVbmCeeh43h51XxHazOv5o'
 
 export default function Resume() {
     return (
         <div className="col-8 offset-2">
             <div className="text-center row">
-                <h1 className="fw-bold">Download my resume</h1>
+                <h1 className="fw-bold">View my resume</h1>
                 <div>
-                    <a href={resume} target="_blank" rel="noreferrer" className="btn btn-dark my-4">Download</a>
+                    <a href={resume} target="_blank" rel="noreferrer" className="btn btn-dark my-4 rounded-pill">Click me ▶</a>
                 </div>
             </div>
             <hr />

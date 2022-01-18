@@ -11,29 +11,31 @@ export default function PortfolioContainer() {
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
-    if (currentPage === 'About') {
-      return <About />;
+    switch (currentPage) {
+      case 'About':
+        return <About />
+      case 'Contact':
+        return <Contact />
+      case 'Resume':
+        return <Resume />
+      case 'Portfolio':
+        return <Portfolio />
+      default:
+        return
     }
-    if (currentPage === 'Contact') {
-      return <Contact />;
-    }
-    if (currentPage === 'Resume'){
-      return <Resume />;
-    }
-    return <Portfolio />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className = "d-flex flex-column vh-100">
+    <div className="d-flex flex-column vh-100">
       {/* We are passing the currentPage from state and the function to update it */}
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       <main className="container mt-5">
         {renderPage()}
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

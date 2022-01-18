@@ -4,7 +4,7 @@ function Navigation({ currentPage, handlePageChange }) {
   return (
     <nav className="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
       <div className="container-fluid">
-        <a className="navbar-brand fw-bold" href="#about"
+        <a className="navbar-brand fw-bold" href="/"
          onClick={() => handlePageChange('About')}
         >paolo garde.</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

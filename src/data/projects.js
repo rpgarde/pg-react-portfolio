@@ -24,7 +24,7 @@ const projects = [
   },
   {
     name:"COVID-19 Tracker",
-    description:"Our first group project. This shows COVID stats globally and by country. I took on the role of overall project lead.",
+    description:"Our first group project. This uses a COVID-19 API to display historical stats globally and by country. I took on the role of overall project lead and lead developer.",
     tech: ['COVID-19 Stats API', 'Bulma', 'Javascript'],
     deployed:"https://rpgarde.github.io/project-1-covid-stats",
     repo: "https://www.github.com/rpgarde/project-1-covid-stats",
@@ -32,7 +32,7 @@ const projects = [
   },
   {
     name:"Tech Blog",
-    description:"Full-stack tech blog with user authentication, post, and comment functionality, deployed on Heroku.",
+    description:"Full-stack blog with user authentication, post, and comment functionality, deployed on Heroku.",
     tech: ['Javascript', 'Bootstrap', 'Node.js', 'Sequelize', 'MySQL', 'Handlebars'],
     deployed:"https://protected-tor-62513.herokuapp.com/",
     repo: "https://www.github.com/rpgarde/cms-tech-blog",
@@ -40,7 +40,7 @@ const projects = [
   },
   {
     name:"Weather Dashboard",
-    description:"My first foray into APIs. Allows you to show current weather + next 5 days for a given city.",
+    description:"My first foray into APIs. Allows you to show current weather + next 5 days for a city. Uses local storage to remember your past searches.",
     tech: ['Bootstrap', 'Javascript', 'OpenWeatherAPI'],
     deployed:"https://rpgarde.github.io/weather-dashboard",
     repo: "https://www.github.com/rpgarde/weather-dashboard",

@@ -18,6 +18,10 @@ const frontEnd = [
     {
         skill: "Bootstrap",
         rating: "A"
+    },
+    {
+        skill:"Sass",
+        rating: "B"
     }
 ]
 
