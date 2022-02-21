@@ -1,42 +1,42 @@
 import React from 'react';
-import { Skill } from './Skill';
-import { frontEnd,backEnd } from '../../data/skills';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPalette, faServer, faToolbox } from '@fortawesome/free-solid-svg-icons'
 
 const resume = 'https://docs.google.com/document/d/1kmN3iH0xwdpJ9WyoGLqLgsVbmCeeh43h51XxHazOv5o'
 
 export default function Resume() {
     return (
-        <div className="col-8 offset-2">
+        <div>
+            <div className = "my-3 d-flex flex-column align-items-center">
+                <h1 className="text-center fw-bold mb-3">What I can do</h1>
+                <p className = "col-md-9">I currently work with a React/ Typescript front-end and a GraphQL/ MongoDB back-end, though I do love a good REST API! I'm upskilling on React Native which we use for mobile development.</p>
+            </div>
+            <div className="row d-flex justify-content-center my-3">
+                <div className="col-md-3">
+                    <div className = "text-center my-2">
+                        <FontAwesomeIcon icon={faPalette} size = "3x"/>
+                    </div>
+                    <h3 className="text-center my-2 fw-bold"> front-end</h3>
+                    <p className = "text-center">HTML, CSS, Javascript, React, Typescript, Sass, Bootstrap</p>
+                </div>
+                <div className="col-md-3">
+                    <div className = "text-center my-2">
+                        <FontAwesomeIcon icon={faServer} size = "3x"/>
+                    </div>
+                    <h3 className="text-center my-2 fw-bold"> back-end</h3>
+                    <p className = "text-center">Node.js, Express, GraphQL, REST APIs, MongoDB, MySQL</p>
+                </div>
+                <div className="col-md-3">
+                    <div className = "text-center my-2">
+                        <FontAwesomeIcon icon={faToolbox} size = "3x"/>
+                    </div>
+                    <h3 className="text-center my-2 fw-bold">misc tools</h3>
+                    <p className = "text-center">Github, Slack, ClickUp, Docker, AWS S3, Heroku</p>
+                </div>
+            </div>
             <div className="text-center row">
-                <h1 className="fw-bold">View my resume</h1>
                 <div>
-                    <a href={resume} target="_blank" rel="noreferrer" className="btn btn-dark my-4 rounded-pill">Click me ▶</a>
-                </div>
-            </div>
-            <hr />
-            <div>
-                <h1 className="text-center my-3 fw-bold">My skills</h1>
-            </div>
-            <div className="row d-flex justify-content-center mb-3">
-                <div className="col-md-5 offset-1">
-                    <h3 className="text-center my-2">front-end</h3>
-                    <ul className="list-group list-group-flush">
-                        {
-                            frontEnd.map((skill) => (
-                                <Skill skill={skill.skill} rating={skill.rating} />
-                            ))
-                        }
-                    </ul>
-                </div>
-                <div className="col-md-5 offset-1">
-                    <h3 className="text-center my-2">back-end</h3>
-                    <ul className="list-group list-group-flush">
-                        {
-                            backEnd.map((skill) => (
-                                <Skill skill={skill.skill} rating={skill.rating} />
-                            ))
-                        }
-                    </ul>
+                    <a href={resume} target="_blank" rel="noreferrer" className="btn btn-dark my-4 rounded-pill">Click to see my full CV▶</a>
                 </div>
             </div>
         </div>

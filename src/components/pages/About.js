@@ -16,7 +16,11 @@ export default function About() {
                 <h3>Software Engineer</h3>
                 <p className = "mt-4">I'm currently a full-stack software engineer at :Different, an Australian Property Tech startup. Before getting into the exciting world of development, I had 8 years of Ops leadership experience in
                   startups like Uber, FoodByUs, and :Different.</p>
-                <p className = "mt-2">My focus has been on Javascript web development, but I'm always up to learn new things. I recently finished up a coding bootcamp at The University of Sydney, where I graduated with an A+ average. </p>
+                <p className = "mt-2">
+                  My focus has been on <span className = "fw-bold">Web Development</span> featuring <span className = "fw-bold">React, Typescript, GraphQL,</span> and 
+                  both <span className = "fw-bold">SQL</span> and <span className = "fw-bold">NoSQL (MongoDB)</span> databases. 
+                  In 2021, I finished up a coding bootcamp at The University of Sydney, where I graduated with an A+ average. 
+                </p>
               </div>
             </div>
           </div>
