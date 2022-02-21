@@ -13,3 +13,13 @@
     transform:scale(1.01);
     transition:0.5s;
 }
+
+.footerlink{
+    color:white;
+    transition:0.5s;
+}
+
+.footerlink:hover{
+    color:#c7c7c7;
+    transition:0.5s;
+}

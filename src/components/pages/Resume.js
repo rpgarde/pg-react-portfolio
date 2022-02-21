@@ -8,8 +8,8 @@ export default function Resume() {
     return (
         <div>
             <div className = "my-3 d-flex flex-column align-items-center">
-                <h1 className="text-center fw-bold mb-3">What I can do</h1>
-                <p className = "col-md-9">I currently work with a React/ Typescript front-end and a GraphQL/ MongoDB back-end, though I do love a good REST API! I'm upskilling on React Native which we use for mobile development.</p>
+                <h1 className="text-center fw-bold mb-3">What I can do (so far)</h1>
+                <p className = "col-md-9">I currently work with a React/ Typescript front-end and a GraphQL/ MongoDB back-end, though I do love a good REST API! I'm upskilling on React Native which we use for mobile development, and who knows what else I'll pick up along the way.</p>
             </div>
             <div className="row d-flex justify-content-center my-3">
                 <div className="col-md-3">
@@ -36,7 +36,7 @@ export default function Resume() {
             </div>
             <div className="text-center row">
                 <div>
-                    <a href={resume} target="_blank" rel="noreferrer" className="btn btn-dark my-4 rounded-pill">Click to see my full CV▶</a>
+                    <a href={resume} target="_blank" rel="noreferrer" className="btn btn-dark my-3 rounded-pill">Click to see my full CV▶</a>
                 </div>
             </div>
         </div>

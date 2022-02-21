@@ -41,8 +41,9 @@ function Contact() {
 
   return (
     <div className="row">
-      <h1 className="text-center fw-bold">Get in touch</h1>
+      <h1 className="text-center fw-bold mb-3">Get in touch</h1>
       <div className="col-6 offset-3">
+      <p>Fill out the form below and I'll get back to you as soon as possible.</p>
         <form className="form" onSubmit={handleSubmit}>
           <div className="mb-3">
             <label className="form-label" htmlFor="email">Email</label>
