@@ -38,22 +38,22 @@ const projects = [
     repo: "https://www.github.com/rpgarde/cms-tech-blog",
     image: techBlog
   },
-  {
-    name:"Weather Dashboard",
-    description:"My first foray into APIs. Allows you to show current weather + next 5 days for a city. Uses local storage to remember your past searches.",
-    tech: ['Bootstrap', 'Javascript', 'OpenWeatherAPI'],
-    deployed:"https://rpgarde.github.io/weather-dashboard",
-    repo: "https://www.github.com/rpgarde/weather-dashboard",
-    image: weatherDash
-  },
-  {
-    name:"Coding Quiz",
-    description:"Built after just 4 weeks into bootcamp. A simple 5-point timed coding quiz which tests you on Javascript.",
-    tech: ['Javascript'],
-    deployed:"https://rpgarde.github.io/coding-quiz",
-    repo: "https://www.github.com/rpgarde/coding-quiz",
-    image: codingQuiz
-  }
+  // {
+  //   name:"Weather Dashboard",
+  //   description:"My first foray into APIs. Allows you to show current weather + next 5 days for a city. Uses local storage to remember your past searches.",
+  //   tech: ['Bootstrap', 'Javascript', 'OpenWeatherAPI'],
+  //   deployed:"https://rpgarde.github.io/weather-dashboard",
+  //   repo: "https://www.github.com/rpgarde/weather-dashboard",
+  //   image: weatherDash
+  // },
+  // {
+  //   name:"Coding Quiz",
+  //   description:"Built after just 4 weeks into bootcamp. A simple 5-point timed coding quiz which tests you on Javascript.",
+  //   tech: ['Javascript'],
+  //   deployed:"https://rpgarde.github.io/coding-quiz",
+  //   repo: "https://www.github.com/rpgarde/coding-quiz",
+  //   image: codingQuiz
+  // }
 ]
 
 export default projects
