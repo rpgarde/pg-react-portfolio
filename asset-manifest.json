@@ -1,32 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.160cba70.chunk.css",
-    "main.js": "/static/js/main.a220e8a2.chunk.js",
-    "main.js.map": "/static/js/main.a220e8a2.chunk.js.map",
+    "main.css": "/static/css/main.1e6e6c17.chunk.css",
+    "main.js": "/static/js/main.de270fdd.chunk.js",
+    "main.js.map": "/static/js/main.de270fdd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.dc33665e.js",
     "runtime-main.js.map": "/static/js/runtime-main.dc33665e.js.map",
     "static/css/2.0a9ec390.chunk.css": "/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.9be21925.chunk.js": "/static/js/2.9be21925.chunk.js",
-    "static/js/2.9be21925.chunk.js.map": "/static/js/2.9be21925.chunk.js.map",
+    "static/js/2.07efffd5.chunk.js": "/static/js/2.07efffd5.chunk.js",
+    "static/js/2.07efffd5.chunk.js.map": "/static/js/2.07efffd5.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.160cba70.chunk.css.map": "/static/css/main.160cba70.chunk.css.map",
-    "static/js/2.9be21925.chunk.js.LICENSE.txt": "/static/js/2.9be21925.chunk.js.LICENSE.txt",
+    "static/css/main.1e6e6c17.chunk.css.map": "/static/css/main.1e6e6c17.chunk.css.map",
+    "static/js/2.07efffd5.chunk.js.LICENSE.txt": "/static/js/2.07efffd5.chunk.js.LICENSE.txt",
     "static/media/coding-quiz.4579dc6d.png": "/static/media/coding-quiz.4579dc6d.png",
     "static/media/covid-tracker.4b3de04e.png": "/static/media/covid-tracker.4b3de04e.png",
-    "static/media/github-icon.4d74fd76.png": "/static/media/github-icon.4d74fd76.png",
     "static/media/granny-crush.57a7b090.png": "/static/media/granny-crush.57a7b090.png",
     "static/media/profile-pic.795c2918.png": "/static/media/profile-pic.795c2918.png",
     "static/media/roomez.68b6b147.png": "/static/media/roomez.68b6b147.png",
     "static/media/tech-blog.c9d5584e.png": "/static/media/tech-blog.c9d5584e.png",
-    "static/media/weather-dash.aa12bf7d.png": "/static/media/weather-dash.aa12bf7d.png",
-    "static/media/youtube-icon.e155d78d.png": "/static/media/youtube-icon.e155d78d.png"
+    "static/media/weather-dash.aa12bf7d.png": "/static/media/weather-dash.aa12bf7d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.dc33665e.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.9be21925.chunk.js",
-    "static/css/main.160cba70.chunk.css",
-    "static/js/main.a220e8a2.chunk.js"
+    "static/js/2.07efffd5.chunk.js",
+    "static/css/main.1e6e6c17.chunk.css",
+    "static/js/main.de270fdd.chunk.js"
   ]
 }
