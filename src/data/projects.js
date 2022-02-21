@@ -8,7 +8,7 @@ import roomez from '../images/roomez.png'
 const projects = [
   {
     name:"roomEZ",
-    description:"Full-stack MERN+GraphQL website for share house dwellers to manage chores, bills, and messages",
+    description:"Full-stack MERN+GraphQL website for share house dwellers to manage chores, bills, and messages.",
     tech: ['React', 'Express', 'Node.js', 'Mongoose', 'MongoDB', 'GraphQL', 'Apollo', 'JWT', 'AWS S3'],
     deployed:"https://roomez.herokuapp.com/",
     repo: "https://github.com/rpgarde/roomez",
@@ -22,14 +22,14 @@ const projects = [
     repo: "https://github.com/zahramertens/granny-crush",
     image: grannyCrush
   },
-  {
-    name:"COVID-19 Tracker",
-    description:"Our first group project. This uses a COVID-19 API to display historical stats globally and by country. I took on the role of overall project lead and lead developer.",
-    tech: ['COVID-19 Stats API', 'Bulma', 'Javascript'],
-    deployed:"https://rpgarde.github.io/project-1-covid-stats",
-    repo: "https://www.github.com/rpgarde/project-1-covid-stats",
-    image: covidStats
-  },
+  // {
+  //   name:"COVID-19 Tracker",
+  //   description:"Our first group project. This uses a COVID-19 API to display historical stats globally and by country. I took on the role of overall project lead and lead developer.",
+  //   tech: ['COVID-19 Stats API', 'Bulma', 'Javascript'],
+  //   deployed:"https://rpgarde.github.io/project-1-covid-stats",
+  //   repo: "https://www.github.com/rpgarde/project-1-covid-stats",
+  //   image: covidStats
+  // },
   {
     name:"Tech Blog",
     description:"Full-stack blog with user authentication, post, and comment functionality, deployed on Heroku.",

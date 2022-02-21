@@ -14,14 +14,6 @@ function Navigation({ currentPage, handlePageChange }) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a aria-current="page" href="#about"
-                className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-                onClick={() => handlePageChange('About')}
-              >
-                about me
-              </a>
-            </li>
-            <li className="nav-item">
               <a aria-current="page" href="#portfolio"
                 className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
                 onClick={() => handlePageChange('Portfolio')}

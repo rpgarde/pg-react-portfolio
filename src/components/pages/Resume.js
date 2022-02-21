@@ -36,7 +36,7 @@ export default function Resume() {
             </div>
             <div className="text-center row">
                 <div>
-                    <a href={resume} target="_blank" rel="noreferrer" className="btn btn-dark my-3 rounded-pill">Click to see my full CV▶</a>
+                    <a href={resume} target="_blank" rel="noreferrer" className="btn btn-dark my-3 rounded-pill">Click to see my full CV ▶</a>
                 </div>
             </div>
         </div>
