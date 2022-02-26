@@ -1,4 +1,5 @@
 # Paolo Garde's React Portfolio
+
 ![license](https://img.shields.io/github/license/rpgarde/pg-react-portfolio)
 
 This is the third version of my portfolio built using React. This is a mobile-first, minimalist black & white design leveraging Bootstrap's responsive utilities.
@@ -7,14 +8,16 @@ You can access via [this link](https://rpgarde.github.io/pg-react-portfolio/)
 
 ![Homepage](src/images/about-me.png)
 
-## Table of Contents 
-* [Technology](#technology)
-* [Features](#features)
-* [User Story](#user-story)
-* [Acceptance Criteria](#acceptance-criteria)
+## Table of Contents
+
+- [Technology](#technology)
+- [Features](#features)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
 
 # Technology
-This uses React, Node, and Bootstrap. 
+
+This uses React, Node, and Bootstrap.
 
 # Features
 
@@ -23,14 +26,17 @@ This uses React, Node, and Bootstrap.
 ![Homepage](src/images/about-me.png)
 
 ## Portfolio
+
 This was rendered with a map loop, combining a portfolio component with an individual per-project component
 ![Portfolio](src/images/portfolio.png)
 
 ## Resume
+
 The resume button clicks to a resume section, while the skills below were rendered by looping through an array of skills and ratings
 ![Portfolio](src/images/resume.png)
 
 ## Contact
+
 This contact section has validations for empty inputs and email errors. If you try to submit the form, you are given my contact details (because the submit does not work yet.)
 ![Portfolio](src/images/contact.png)
 

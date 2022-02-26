@@ -1,0 +1,46 @@
+import React, { useState } from 'react';
+import Tag from './Tag';
+import PropTypes from 'prop-types';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+
+const showFirstWords = (str, numberOfWords) => {
+  return str.split(' ').slice(0, numberOfWords).join(' ');
+};
+
+function BlogCard(props) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="card m-3 project-card border-0 shadow">
+      <div className="card-body">
+        <h5 className="card-title fw-bold">{props.title}</h5>
+        <p className="card-text">
+          {props.categories.map((category) => (
+            <Tag tagName={category} key={category} />
+          ))}{' '}
+        </p>
+        <p className="card-text">
+          {isOpen
+            ? documentToReactComponents(props.content.json)
+            : showFirstWords(
+                documentToReactComponents(props.content.json)[0].props.children[0],
+                30
+              )}
+        </p>
+      </div>
+      <div className="card-body">
+        <button onClick={() => setIsOpen(!isOpen)} className="btn btn-dark rounded-pill mx-1">
+          {isOpen ? 'Back to Blogs ▶' : 'View ▶'}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+BlogCard.propTypes = {
+  title: PropTypes.string,
+  categories: PropTypes.array,
+  content: PropTypes.object
+};
+
+export default BlogCard;

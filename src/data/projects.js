@@ -1,25 +1,37 @@
-import grannyCrush from '../images/granny-crush.png'
-import covidStats from '../images/covid-tracker.png'
-import techBlog from '../images/tech-blog.png'
-import weatherDash from '../images/weather-dash.png'
-import codingQuiz from '../images/coding-quiz.png'
-import roomez from '../images/roomez.png'
+import grannyCrush from '../images/granny-crush.png';
+// import covidStats from '../images/covid-tracker.png';
+import techBlog from '../images/tech-blog.png';
+// import weatherDash from '../images/weather-dash.png';
+// import codingQuiz from '../images/coding-quiz.png';
+import roomez from '../images/roomez.png';
 
 const projects = [
   {
-    name:"roomEZ",
-    description:"Full-stack MERN+GraphQL website for share house dwellers to manage chores, bills, and messages.",
-    tech: ['React', 'Express', 'Node.js', 'Mongoose', 'MongoDB', 'GraphQL', 'Apollo', 'JWT', 'AWS S3'],
-    deployed:"https://roomez.herokuapp.com/",
-    repo: "https://github.com/rpgarde/roomez",
+    name: 'roomEZ',
+    description:
+      'Full-stack MERN+GraphQL website for share house dwellers to manage chores, bills, and messages.',
+    tech: [
+      'React',
+      'Express',
+      'Node.js',
+      'Mongoose',
+      'MongoDB',
+      'GraphQL',
+      'Apollo',
+      'JWT',
+      'AWS S3'
+    ],
+    deployed: 'https://roomez.herokuapp.com/',
+    repo: 'https://github.com/rpgarde/roomez',
     image: roomez
   },
   {
-    name:"Granny Crush",
-    description:"Full-stack dating site for seniors with match and chat functionality. This was a group project and I was the lead backend developer.",
+    name: 'Granny Crush',
+    description:
+      'Full-stack dating site for seniors with match and chat functionality. This was a group project and I was the lead backend developer.',
     tech: ['Javascript', 'Bulma', 'Node.js', 'Sequelize', 'Multer', 'Socket.io'],
-    deployed:"https://obscure-dusk-34538.herokuapp.com/",
-    repo: "https://github.com/zahramertens/granny-crush",
+    deployed: 'https://obscure-dusk-34538.herokuapp.com/',
+    repo: 'https://github.com/zahramertens/granny-crush',
     image: grannyCrush
   },
   // {
@@ -31,13 +43,14 @@ const projects = [
   //   image: covidStats
   // },
   {
-    name:"Tech Blog",
-    description:"Full-stack blog with user authentication, post, and comment functionality, deployed on Heroku.",
+    name: 'Tech Blog',
+    description:
+      'Full-stack blog with user authentication, post, and comment functionality, deployed on Heroku.',
     tech: ['Javascript', 'Bootstrap', 'Node.js', 'Sequelize', 'MySQL', 'Handlebars'],
-    deployed:"https://protected-tor-62513.herokuapp.com/",
-    repo: "https://www.github.com/rpgarde/cms-tech-blog",
+    deployed: 'https://protected-tor-62513.herokuapp.com/',
+    repo: 'https://www.github.com/rpgarde/cms-tech-blog',
     image: techBlog
-  },
+  }
   // {
   //   name:"Weather Dashboard",
   //   description:"My first foray into APIs. Allows you to show current weather + next 5 days for a city. Uses local storage to remember your past searches.",
@@ -54,6 +67,6 @@ const projects = [
   //   repo: "https://www.github.com/rpgarde/coding-quiz",
   //   image: codingQuiz
   // }
-]
+];
 
-export default projects
+export default projects;

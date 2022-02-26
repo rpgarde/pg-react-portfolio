@@ -3,8 +3,9 @@ import Navigation from './Navigation';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
-import Resume from './pages/Resume'
+import Resume from './pages/Resume';
 import Footer from './Footer';
+import Blog from './pages/Blog';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -13,15 +14,17 @@ export default function PortfolioContainer() {
   const renderPage = () => {
     switch (currentPage) {
       case 'About':
-        return <About />
+        return <About />;
       case 'Contact':
-        return <Contact />
+        return <Contact />;
       case 'Resume':
-        return <Resume />
+        return <Resume />;
       case 'Portfolio':
-        return <Portfolio />
+        return <Portfolio />;
+      case 'Blog':
+        return <Blog />;
       default:
-        return
+        return;
     }
   };
 
@@ -32,9 +35,7 @@ export default function PortfolioContainer() {
       {/* We are passing the currentPage from state and the function to update it */}
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
-      <main className="container mt-5">
-        {renderPage()}
-      </main>
+      <main className="container mt-5">{renderPage()}</main>
       <Footer />
     </div>
   );

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 // Here we import a helper function that will check if the email is valid
 import { validateEmail, validateField } from '../utils/helpers';
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 
 function Contact() {
   // Create state variables for the fields in the form
@@ -11,7 +11,7 @@ function Contact() {
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-  const [state, handleSubmit] = useForm("myyozwjv");
+  const [state, handleSubmit] = useForm('myyozwjv');
 
   const handleInputChange = (e) => {
     const { target } = e;
@@ -27,26 +27,26 @@ function Contact() {
     }
   };
 
-  const handleFormBlur = (e) => {
+  const handleFormBlur = () => {
     if (!validateField(name) || !validateField(email) || !validateField(message)) {
       setErrorMessage('Please fill up all the fields');
-    }
-    else if (!validateEmail(email)) {
+    } else if (!validateEmail(email)) {
       setErrorMessage('Email is invalid');
+    } else {
+      setErrorMessage('');
     }
-    else {
-      setErrorMessage('')
-    }
-  }
+  };
 
   return (
     <div className="row">
       <h1 className="text-center fw-bold mb-3">Get in touch</h1>
       <div className="col-6 offset-3">
-      <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+        <p>Fill out the form below and I&apos;ll get back to you as soon as possible.</p>
         <form className="form" onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label className="form-label" htmlFor="email">Email</label>
+            <label className="form-label" htmlFor="email">
+              Email
+            </label>
             <input
               value={email}
               className="form-control"
@@ -59,7 +59,9 @@ function Contact() {
             />
           </div>
           <div className="mb-3">
-            <label className="form-label" htmlFor="name">Name</label>
+            <label className="form-label" htmlFor="name">
+              Name
+            </label>
             <input
               value={name}
               className="form-control"
@@ -72,7 +74,9 @@ function Contact() {
             />
           </div>
           <div className="mb-3">
-            <label className="form-label" htmlFor="message">Message</label>
+            <label className="form-label" htmlFor="message">
+              Message
+            </label>
             <textarea
               value={message}
               className="form-control"
@@ -85,19 +89,18 @@ function Contact() {
             />
           </div>
           <div>
-            {errorMessage.length > 0 &&
-              (<p className="alert alert-danger">{errorMessage}</p>)
-            }
-            {state.succeeded &&
-              (<p className="alert alert-success">Thank you for your message. I'll get in touch soon.</p>)
-            }
+            {errorMessage.length > 0 && <p className="alert alert-danger">{errorMessage}</p>}
+            {state.succeeded && (
+              <p className="alert alert-success">
+                Thank you for your message. I&apos;ll get in touch soon.
+              </p>
+            )}
           </div>
           <div className="text-center mb-3">
             <button
               type="submit"
               className="btn btn-dark"
-              disabled={state.submitting || errorMessage.length > 0 ? true : false}
-            >
+              disabled={state.submitting || errorMessage.length > 0 ? true : false}>
               Submit
             </button>
           </div>
