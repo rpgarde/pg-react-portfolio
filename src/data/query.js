@@ -7,6 +7,9 @@ const query = `
       content {
         json
       }
+      sys {
+        publishedAt
+      }
     }
   }
 }
