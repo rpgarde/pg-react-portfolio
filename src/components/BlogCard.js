@@ -4,15 +4,20 @@ import PropTypes from 'prop-types';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import moment from 'moment';
 
-const showFirstWords = (str, numberOfWords) => {
-  return str.split(' ').slice(0, numberOfWords).join(' ') + ' ...';
-};
+// const showFirstWords = (str, numberOfWords) => {
+//   return str.split(' ').slice(0, numberOfWords).join(' ') + ' ...';
+// };
 
 function BlogCard(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="card m-3 blog-card border-0 shadow">
+    <div
+      className={
+        isOpen
+          ? 'card m-3 blog-card blog-card-open border-0 shadow'
+          : 'card m-3 blog-card blog-card-closed border-0 shadow'
+      }>
       <div className="card-body">
         <h5 className="card-title fw-bold">{props.title}</h5>
         <h6 className="card-subtitle mb-2 text-muted">
@@ -23,18 +28,13 @@ function BlogCard(props) {
             <Tag tagName={category} key={category} />
           ))}{' '}
         </p>
-        <p className="card-text">
-          {isOpen
-            ? documentToReactComponents(props.content.json)
-            : showFirstWords(
-                documentToReactComponents(props.content.json)[0].props.children[0],
-                30
-              )}
+        <p className={isOpen ? 'card-text text-body-open' : 'card-text text-body-closed'}>
+          {documentToReactComponents(props.content.json)}
         </p>
       </div>
       <div className="card-body">
         <button onClick={() => setIsOpen(!isOpen)} className="btn btn-dark rounded-pill mx-1">
-          {isOpen ? 'Back to Blogs ▶' : 'View Full Post ▶'}
+          {isOpen ? 'Collapse ◀' : 'Expand ▶'}
         </button>
       </div>
     </div>
