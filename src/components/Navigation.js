@@ -1,13 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Link, useLocation } from 'react-router-dom';
 
-function Navigation({ currentPage, handlePageChange }) {
+function Navigation() {
+  const location = useLocation().pathname;
+
   return (
     <nav className="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
       <div className="container-fluid">
-        <a className="navbar-brand fw-bold" href="/" onClick={() => handlePageChange('About')}>
+        <Link to="/" className="navbar-brand fw-bold">
           paolo garde.
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -21,40 +23,30 @@ function Navigation({ currentPage, handlePageChange }) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a
-                aria-current="page"
-                href="#portfolio"
-                className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
-                onClick={() => handlePageChange('Portfolio')}>
+              <Link
+                to="/portfolio"
+                className={location === '/portfolio' ? 'nav-link active' : 'nav-link'}>
                 my portfolio
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
-                aria-current="page"
-                href="#resume"
-                className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-                onClick={() => handlePageChange('Resume')}>
+              <Link
+                to="/resume"
+                className={location === '/resume' ? 'nav-link active' : 'nav-link'}>
                 my skills & cv
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
-                aria-current="page"
-                href="#blog"
-                className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
-                onClick={() => handlePageChange('Blog')}>
+              <Link to="/blog" className={location === '/blog' ? 'nav-link active' : 'nav-link'}>
                 blog
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
-                aria-current="page"
-                href="#contact"
-                className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-                onClick={() => handlePageChange('Contact')}>
+              <Link
+                to="/contact"
+                className={location === '/contact' ? 'nav-link active' : 'nav-link'}>
                 contact me
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -62,10 +54,5 @@ function Navigation({ currentPage, handlePageChange }) {
     </nav>
   );
 }
-
-Navigation.propTypes = {
-  currentPage: PropTypes.string,
-  handlePageChange: PropTypes.func
-};
 
 export default Navigation;
