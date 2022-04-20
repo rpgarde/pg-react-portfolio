@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navigation from './Navigation';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
@@ -10,7 +10,7 @@ import Blog from './pages/Blog';
 
 export default function PortfolioContainer() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="d-flex flex-column vh-100">
         <Navigation />
         <main className="container mt-5">
@@ -24,6 +24,6 @@ export default function PortfolioContainer() {
         </main>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
