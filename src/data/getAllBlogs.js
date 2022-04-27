@@ -1,18 +1,20 @@
-const query = `
+const getAllBlogs = `
 {
   blogCollection {
     items {
       title
+      slug
       category
       content {
         json
       }
       sys {
-        publishedAt
+        firstPublishedAt
+        id
       }
     }
   }
 }
 `;
 
-export default query;
+export default getAllBlogs;

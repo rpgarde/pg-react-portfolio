@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import query from '../../data/query';
+import query from '../../data/getAllBlogs';
 import BlogCard from '../BlogCard';
 
 export default function Blog() {
@@ -34,13 +34,15 @@ export default function Blog() {
 
   return (
     <>
+      <h1 className="text-center fw-bold mb-3">I try to write sometimes</h1>
       {blogs.map((blog) => (
         <BlogCard
           title={blog.title}
           categories={blog.category}
           key={blog.title}
           content={blog.content}
-          publishedAt={blog.sys.publishedAt}
+          publishedAt={blog.sys.firstPublishedAt}
+          slug={blog.slug}
         />
       ))}
     </>

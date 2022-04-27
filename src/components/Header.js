@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Footer from './Footer';
 import Blog from './pages/Blog';
+import BlogPage from './pages/BlogPage';
 
 export default function PortfolioContainer() {
   return (
@@ -17,6 +18,7 @@ export default function PortfolioContainer() {
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="blog" element={<Blog />} />
+            <Route path="blog/:blogSlug" element={<BlogPage />} />
             <Route path="portfolio" element={<Portfolio />} />
             <Route path="resume" element={<Resume />} />
             <Route path="contact" element={<Contact />} />
