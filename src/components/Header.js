@@ -8,13 +8,14 @@ import Resume from './pages/Resume';
 import Footer from './Footer';
 import Blog from './pages/Blog';
 import BlogPage from './pages/BlogPage';
+import NoMatch from './pages/NoMatch';
 
 export default function PortfolioContainer() {
   return (
     <HashRouter>
       <div className="d-flex flex-column vh-100">
         <Navigation />
-        <main className="container mt-5">
+        <main className="container my-3">
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="blog" element={<Blog />} />
@@ -22,6 +23,7 @@ export default function PortfolioContainer() {
             <Route path="portfolio" element={<Portfolio />} />
             <Route path="resume" element={<Resume />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="*" element={<NoMatch />} />
           </Routes>
         </main>
         <Footer />
