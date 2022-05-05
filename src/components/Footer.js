@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
+import countapi from 'countapi-js';
 
 export default function Footer() {
+  const [countVisits, setCountVisits] = useState(0);
+
+  useEffect(() => {
+    countapi.visits('global').then((result) => {
+      setCountVisits(result.value);
+    });
+  }, []);
+
   return (
     <footer className="footer bg-dark mt-auto py-4">
       <div className="d-flex justify-content-center py-2">
@@ -18,6 +27,9 @@ export default function Footer() {
       </div>
       <div className="container d-flex justify-content-center">
         <span className="text-muted">&copy; Paolo Garde, 2022</span>
+      </div>
+      <div className="container d-flex justify-content-center">
+        <span className="text-muted">This page has been viewed {countVisits} times</span>
       </div>
     </footer>
   );
