@@ -29,7 +29,7 @@ export default function Footer() {
         <span className="text-muted">&copy; Paolo Garde, 2022</span>
       </div>
       <div className="container d-flex justify-content-center">
-        <span className="text-muted">This page has been viewed {countVisits} times</span>
+        <span className="text-muted">Oh hey, you&apos;re visitor number {countVisits}</span>
       </div>
     </footer>
   );
