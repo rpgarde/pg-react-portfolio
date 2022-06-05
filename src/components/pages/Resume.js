@@ -2,7 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPalette, faServer, faToolbox } from '@fortawesome/free-solid-svg-icons';
 
-const resume = 'https://docs.google.com/document/d/1kmN3iH0xwdpJ9WyoGLqLgsVbmCeeh43h51XxHazOv5o';
+const resume =
+  'https://docs.google.com/document/d/e/2PACX-1vT7iH1lrvBfQrOn7u2fAXNt7BMF1a7gIakyTmKj8Yh2YoVZBWR8rxBd_oFRHBM8QSfP6Io7FdA7_yLF/pub?urp=gmail_link';
 
 export default function Resume() {
   return (
