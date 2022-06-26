@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7df2060.chunk.css",
+    "main.css": "/static/css/main.3cafba9e.chunk.css",
     "main.js": "/static/js/main.887df0dd.chunk.js",
     "main.js.map": "/static/js/main.887df0dd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b42e3fe5.js",
@@ -10,7 +10,7 @@
     "static/js/2.47c1795c.chunk.js.map": "/static/js/2.47c1795c.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.d7df2060.chunk.css.map": "/static/css/main.d7df2060.chunk.css.map",
+    "static/css/main.3cafba9e.chunk.css.map": "/static/css/main.3cafba9e.chunk.css.map",
     "static/js/2.47c1795c.chunk.js.LICENSE.txt": "/static/js/2.47c1795c.chunk.js.LICENSE.txt",
     "static/media/granny-crush.57a7b090.png": "/static/media/granny-crush.57a7b090.png",
     "static/media/profile-pic.795c2918.png": "/static/media/profile-pic.795c2918.png",
@@ -21,7 +21,7 @@
     "static/js/runtime-main.b42e3fe5.js",
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.47c1795c.chunk.js",
-    "static/css/main.d7df2060.chunk.css",
+    "static/css/main.3cafba9e.chunk.css",
     "static/js/main.887df0dd.chunk.js"
   ]
 }
