@@ -41,7 +41,9 @@ export default function Blog() {
   return (
     <div className="mb-3">
       <h1 className="fw-bold mb-3">{blog.title}</h1>
-      <h6 className="mb-2 text-muted">Posted on {moment(blog.publishedAt).format('D MMM YYYY')}</h6>
+      <h6 className="mb-2 text-muted">
+        Posted on {moment(blog.sys.firstPublishedAt).format('D MMM YYYY')}
+      </h6>
       <p className="card-text">
         {blog.category.map((category) => (
           <Tag tagName={category} key={category} />

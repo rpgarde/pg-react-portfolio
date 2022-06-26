@@ -6,7 +6,12 @@ function Project(props) {
   return (
     <div className="card m-3 project-card border-0 shadow">
       <a href={props.deployed}>
-        <img src={props.image} className="card-img-top" alt={props.name} />
+        <div className="card-mask">
+          <div className="card-mask-text">
+            <span>View deployed site</span>
+          </div>
+          <img src={props.image} className="card-img-top" alt={props.name} />
+        </div>
       </a>
       <div className="card-body">
         <h5 className="card-title fw-bold">{props.name}</h5>
