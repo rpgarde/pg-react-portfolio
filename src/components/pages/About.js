@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from '../../images/profile-pic-svg.svg';
+import profile from '../../images/profile-pic.png';
 export default function About() {
   return (
     <div className="row">
