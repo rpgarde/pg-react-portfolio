@@ -11,7 +11,8 @@ export default function About() {
             </div>
             <div className="card-body col-md-6 col-lg-7">
               <div>
-                <h1 className="fw-bold text-large">PAOLO GARDE</h1>
+                <h1 className="fw-bold text-large">PAOLO</h1>
+                <h1 className="fw-bold text-large">GARDE</h1>
                 <h3>Startup Enthusiast</h3>
                 <p className="mt-4">
                   I&apos;m currently a full-stack software engineer at :Different, an Australian

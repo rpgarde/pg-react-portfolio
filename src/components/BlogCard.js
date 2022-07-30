@@ -7,7 +7,7 @@ import moment from 'moment';
 
 function BlogCard(props) {
   return (
-    <div className={'card m-3 blog-card blog-card-closed border-all-bold'}>
+    <div className={'card m-3 blog-card blog-card-closed border-2 border-dark custom-shadow'}>
       <div className="card-body">
         <h5 className="card-title fw-bold">{props.title}</h5>
         <h6 className="card-subtitle mb-2 text-muted">
@@ -24,7 +24,7 @@ function BlogCard(props) {
       </div>
       <div className="card-body">
         <Link to={props.slug}>
-          <button className="btn text-white background-blue border-all-bold mx-1">
+          <button className="btn text-white background-blue border-all-bold mx-1 move">
             View Blog ▶
           </button>
         </Link>

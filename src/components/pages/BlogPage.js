@@ -51,7 +51,9 @@ export default function Blog() {
       </p>
       <p className={'card-text'}>{documentToReactComponents(blog.content.json)}</p>
       <Link to={'/blog'}>
-        <button className="btn btn-dark rounded-pill mx-1">Back to Blogs ◀</button>
+        <button className="btn text-white background-blue border-all-bold mx-1 move">
+          Back to Blogs ◀
+        </button>
       </Link>
     </div>
   );

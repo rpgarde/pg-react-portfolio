@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPalette, faServer, faToolbox } from '@fortawesome/free-solid-svg-icons';
 
 const resume =
-  'https://docs.google.com/document/d/e/2PACX-1vT7iH1lrvBfQrOn7u2fAXNt7BMF1a7gIakyTmKj8Yh2YoVZBWR8rxBd_oFRHBM8QSfP6Io7FdA7_yLF/pub?urp=gmail_link';
+  'https://docs.google.com/document/d/e/2PACX-1vTy_Fzr2DLAlFu0NBYzTXMljszsMqxD6DETowGNeHIoLpBtLzmySH0AnTftvby5kXzQssWH4UckIpHv/pub';
 
 export default function Resume() {
   return (
@@ -16,22 +16,22 @@ export default function Resume() {
           mobile development, and who knows what else I&apos;ll pick up along the way.
         </p>
       </div>
-      <div className="row d-flex justify-content-center my-3">
-        <div className="col-md-3">
+      <div className="row d-flex justify-content-center m-3">
+        <div className="col-md-3 border-all-thin custom-shadow m-2">
           <div className="text-center my-2">
             <FontAwesomeIcon icon={faPalette} size="3x" />
           </div>
           <h3 className="text-center my-2 fw-bold"> front-end</h3>
           <p className="text-center">HTML, CSS, Javascript, React, Typescript, Sass, Bootstrap</p>
         </div>
-        <div className="col-md-3">
+        <div className="col-md-3 border-all-thin custom-shadow m-2">
           <div className="text-center my-2">
             <FontAwesomeIcon icon={faServer} size="3x" />
           </div>
           <h3 className="text-center my-2 fw-bold"> back-end</h3>
           <p className="text-center">Node.js, Express, GraphQL, REST APIs, MongoDB, MySQL</p>
         </div>
-        <div className="col-md-3">
+        <div className="col-md-3 border-all-thin custom-shadow m-2">
           <div className="text-center my-2">
             <FontAwesomeIcon icon={faToolbox} size="3x" />
           </div>
@@ -45,7 +45,7 @@ export default function Resume() {
             href={resume}
             target="_blank"
             rel="noreferrer"
-            className="btn text-white background-blue my-3 border-all-bold">
+            className="btn text-white background-blue my-3 border-all-bold move">
             Click to see my full CV ▶
           </a>
         </div>

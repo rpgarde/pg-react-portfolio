@@ -8,7 +8,7 @@ function Navigation() {
     <nav className="navbar sticky-top navbar-expand-md background-blue navbar-dark border-bottom-bold">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand fw-bold header-font">
-          PAOLO GARDE
+          PG
         </Link>
         <button
           className="navbar-toggler"

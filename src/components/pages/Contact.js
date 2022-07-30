@@ -42,11 +42,8 @@ function Contact() {
       <h1 className="text-center fw-bold mb-3">Get in touch</h1>
       <div className="col-6 offset-3">
         <p>Fill out the form below and I&apos;ll get back to you as soon as possible.</p>
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="form border-all-thin custom-shadow p-4" onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label className="form-label" htmlFor="email">
-              Email
-            </label>
             <input
               value={email}
               className="form-control border-dark border-2"
@@ -59,9 +56,6 @@ function Contact() {
             />
           </div>
           <div className="mb-3">
-            <label className="form-label" htmlFor="name">
-              Name
-            </label>
             <input
               value={name}
               className="form-control border-dark border-2"
@@ -74,9 +68,6 @@ function Contact() {
             />
           </div>
           <div className="mb-3">
-            <label className="form-label" htmlFor="message">
-              Message
-            </label>
             <textarea
               value={message}
               className="form-control border-dark border-2"
@@ -99,7 +90,7 @@ function Contact() {
           <div className="text-center mb-3">
             <button
               type="submit"
-              className="btn background-blue text-white border-all-bold"
+              className="btn background-blue text-white border-all-bold move"
               disabled={state.submitting || errorMessage.length > 0 ? true : false}>
               Submit
             </button>
