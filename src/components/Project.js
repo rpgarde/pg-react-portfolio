@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 function Project(props) {
   return (
-    <div className="card m-3 project-card border-0 shadow">
+    <div className="card m-3 project-card border-4 border-dark">
       <a href={props.deployed}>
         <div className="card-mask">
           <div className="card-mask-text">
@@ -23,10 +23,10 @@ function Project(props) {
         <p className="card-text">{props.description}</p>
       </div>
       <div className="card-body">
-        <a href={props.repo} className="btn btn-dark rounded-pill mx-1">
+        <a href={props.repo} className="btn text-white background-blue border-all-bold mx-1">
           Repo ▶
         </a>
-        <a href={props.deployed} className="btn btn-dark rounded-pill mx-1">
+        <a href={props.deployed} className="btn text-white background-blue border-all-bold mx-1">
           Deployed site ▶
         </a>
       </div>

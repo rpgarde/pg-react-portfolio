@@ -13,7 +13,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="footer bg-dark mt-auto py-4">
+    <footer className="footer background-blue mt-auto py-4 border-top-bold">
       <div className="d-flex justify-content-center py-2">
         <a className="mx-2 footerlink" href="https://www.github.com/rpgarde">
           <FontAwesomeIcon icon={faGithubSquare} size="3x" />
@@ -26,10 +26,10 @@ export default function Footer() {
         </a>
       </div>
       <div className="container d-flex justify-content-center">
-        <span className="text-muted">&copy; Paolo Garde, 2022</span>
+        <span className="text-light">&copy; Paolo Garde, 2022</span>
       </div>
       <div className="container d-flex justify-content-center">
-        <span className="text-muted">Oh hey, you&apos;re visitor number {countVisits}</span>
+        <span className="text-light">Oh hey, you&apos;re visitor number {countVisits}</span>
       </div>
     </footer>
   );

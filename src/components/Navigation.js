@@ -5,10 +5,10 @@ function Navigation() {
   const location = useLocation().pathname;
 
   return (
-    <nav className="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+    <nav className="navbar sticky-top navbar-expand-md background-blue navbar-dark border-bottom-bold">
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand fw-bold">
-          paolo garde.
+        <Link to="/" className="navbar-brand fw-bold header-font">
+          PAOLO GARDE
         </Link>
         <button
           className="navbar-toggler"

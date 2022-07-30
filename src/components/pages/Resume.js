@@ -45,7 +45,7 @@ export default function Resume() {
             href={resume}
             target="_blank"
             rel="noreferrer"
-            className="btn btn-dark my-3 rounded-pill">
+            className="btn text-white background-blue my-3 border-all-bold">
             Click to see my full CV ▶
           </a>
         </div>

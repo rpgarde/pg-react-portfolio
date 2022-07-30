@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from '../../images/profile-pic.png';
+import profile from '../../images/profile-pic-svg.svg';
 export default function About() {
   return (
     <div className="row">
@@ -7,13 +7,12 @@ export default function About() {
         <div className="card mb-3 border-0">
           <div className="row g-4">
             <div className="col-md-6 col-lg-5">
-              <img src={profile} className="img-fluid rounded" alt="paolo garde" />
+              <img src={profile} className="img img-fluid custom-shadow" alt="paolo garde" />
             </div>
             <div className="card-body col-md-6 col-lg-7">
               <div>
-                <h3>Hello World 👋</h3>
-                <h1 className="fw-bold">I&apos;m Paolo Garde.</h1>
-                <h3>Software Engineer</h3>
+                <h1 className="fw-bold text-large">PAOLO GARDE</h1>
+                <h3>Startup Enthusiast</h3>
                 <p className="mt-4">
                   I&apos;m currently a full-stack software engineer at :Different, an Australian
                   Property Tech startup. Before getting into the exciting world of development, I

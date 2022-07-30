@@ -49,7 +49,7 @@ function Contact() {
             </label>
             <input
               value={email}
-              className="form-control"
+              className="form-control border-dark border-2"
               id="email"
               name="email"
               onChange={handleInputChange}
@@ -64,7 +64,7 @@ function Contact() {
             </label>
             <input
               value={name}
-              className="form-control"
+              className="form-control border-dark border-2"
               id="name"
               name="name"
               onChange={handleInputChange}
@@ -79,7 +79,7 @@ function Contact() {
             </label>
             <textarea
               value={message}
-              className="form-control"
+              className="form-control border-dark border-2"
               id="message"
               name="message"
               onChange={handleInputChange}
@@ -99,7 +99,7 @@ function Contact() {
           <div className="text-center mb-3">
             <button
               type="submit"
-              className="btn btn-dark"
+              className="btn background-blue text-white border-all-bold"
               disabled={state.submitting || errorMessage.length > 0 ? true : false}>
               Submit
             </button>
