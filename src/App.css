@@ -98,11 +98,9 @@ h1, h2, h3, h4, h5, h6, .header-font {
 }
 
 .move {
-  transform: translateY(0px);
-  transition: 0.5s transform;
+  transition: 0.5s transform !important;
 }
 
 .move:hover{
-  transform: translateY(-3px);
-  transition: 0.5s transform;
+  transform: translate(0px, -3px) !important;
 }
