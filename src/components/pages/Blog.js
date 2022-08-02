@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import query from '../../data/getAllBlogs';
-import BlogCard from '../BlogCard';
+import BlogCard from '../components/BlogCard';
 
 export default function Blog() {
   const [blogs, setBlogs] = useState([]);

@@ -6,6 +6,7 @@
 
 h1, h2, h3, h4, h5, h6, .header-font {
   font-family: 'Rubik Mono One', sans-serif;
+  word-spacing: -0.25em !important;
 }
 
 .text-large {
@@ -83,7 +84,7 @@ h1, h2, h3, h4, h5, h6, .header-font {
 }
 
 .project-card {
-  width: 25rem;
+  width: 20rem;
   transition: 0.5s;
 }
 

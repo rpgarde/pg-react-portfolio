@@ -1,6 +1,5 @@
 import React from 'react';
-import Project from '../Project';
-// import images
+import Project from '../components/Project';
 import projects from '../../data/projects';
 
 export default function Portfolio() {

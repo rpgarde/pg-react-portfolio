@@ -3,7 +3,7 @@ import query from '../../data/getSingleBlog';
 import moment from 'moment';
 import { useParams } from 'react-router-dom';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import Tag from '../Tag';
+import Tag from '../components/Tag';
 import { Link } from 'react-router-dom';
 
 export default function Blog() {
